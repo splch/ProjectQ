@@ -27,8 +27,13 @@ from copy import deepcopy
 import networkx as nx
 
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import (AllocateQubitGate, Command, DeallocateQubitGate,
-                          FlushGate, Swap)
+from projectq.ops import (
+    AllocateQubitGate,
+    Command,
+    DeallocateQubitGate,
+    FlushGate,
+    Swap,
+)
 from projectq.types import WeakQubitRef
 
 from ._basicmapper import BasicMapperEngine

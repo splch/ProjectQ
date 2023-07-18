@@ -17,13 +17,17 @@ import pytest
 import projectq.libs.math
 import projectq.setups.decompositions
 from projectq.backends._sim._simulator_test import sim
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
-                               InstructionFilter, LocalOptimizer, MainEngine,
-                               TagRemover)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    InstructionFilter,
+    LocalOptimizer,
+    MainEngine,
+    TagRemover,
+)
 from projectq.libs.math import MultiplyByConstantModN
 from projectq.meta import Control
-from projectq.ops import (QFT, All, BasicMathGate, H, Measure, Swap, X,
-                          get_inverse)
+from projectq.ops import QFT, All, BasicMathGate, H, Measure, Swap, X, get_inverse
 
 rule_set = DecompositionRuleSet(modules=(projectq.libs.math, projectq.setups.decompositions))
 

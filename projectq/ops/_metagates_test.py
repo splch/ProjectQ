@@ -21,9 +21,19 @@ import pytest
 
 from projectq import MainEngine
 from projectq.cengines import DummyEngine
-from projectq.ops import (All, C, ClassicalInstructionGate, Command, Entangle,
-                          FastForwardingGate, NotInvertible, Rx, T, Y,
-                          _metagates)
+from projectq.ops import (
+    All,
+    C,
+    ClassicalInstructionGate,
+    Command,
+    Entangle,
+    FastForwardingGate,
+    NotInvertible,
+    Rx,
+    T,
+    Y,
+    _metagates,
+)
 from projectq.types import Qubit, WeakQubitRef
 
 

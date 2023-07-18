@@ -20,9 +20,28 @@ import pytest
 from projectq.backends._ibm import _ibm
 from projectq.cengines import BasicMapperEngine, DummyEngine, MainEngine
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import (CNOT, NOT, All, Allocate, Barrier, Command,
-                          Deallocate, Entangle, H, Measure, Rx, Ry, Rz, S,
-                          Sdag, T, Tdag, X, Y, Z)
+from projectq.ops import (
+    CNOT,
+    NOT,
+    All,
+    Allocate,
+    Barrier,
+    Command,
+    Deallocate,
+    Entangle,
+    H,
+    Measure,
+    Rx,
+    Ry,
+    Rz,
+    S,
+    Sdag,
+    T,
+    Tdag,
+    X,
+    Y,
+    Z,
+)
 from projectq.setups import restrictedgateset
 from projectq.types import WeakQubitRef
 

@@ -7,10 +7,34 @@ import sys
 
 from projectq import MainEngine
 from projectq.backends import CircuitDrawer
-from projectq.ops import (CNOT, QFT, All, Barrier, BasicMathGate, C, Entangle,
-                          H, Measure, Ph, QubitOperator, Rx, Ry, Rz, S,
-                          SqrtSwap, SqrtX, Swap, T, Tensor, TimeEvolution,
-                          Toffoli, X, Y, Z, get_inverse)
+from projectq.ops import (
+    CNOT,
+    QFT,
+    All,
+    Barrier,
+    BasicMathGate,
+    C,
+    Entangle,
+    H,
+    Measure,
+    Ph,
+    QubitOperator,
+    Rx,
+    Ry,
+    Rz,
+    S,
+    SqrtSwap,
+    SqrtX,
+    Swap,
+    T,
+    Tensor,
+    TimeEvolution,
+    Toffoli,
+    X,
+    Y,
+    Z,
+    get_inverse,
+)
 
 
 def zoo_profile():

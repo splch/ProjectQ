@@ -26,8 +26,7 @@ translated in the backend in the Rx/Ry/MS gate set.
 """
 
 from projectq.backends._aqt._aqt_http_client import show_devices
-from projectq.backends._exceptions import (DeviceNotHandledError,
-                                           DeviceOfflineError)
+from projectq.backends._exceptions import DeviceNotHandledError, DeviceOfflineError
 from projectq.cengines import BasicMapperEngine
 from projectq.ops import Barrier, Rx, Rxx, Ry
 from projectq.setups import restrictedgateset

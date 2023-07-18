@@ -18,8 +18,12 @@ import pytest
 import projectq.setups.decompositions.sqrtswap2cnot as sqrtswap2cnot
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+)
 from projectq.ops import All, Command, Measure, SqrtSwap
 from projectq.types import WeakQubitRef
 

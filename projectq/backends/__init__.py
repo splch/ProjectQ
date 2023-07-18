@@ -32,8 +32,7 @@ from ._aqt import AQTBackend
 from ._awsbraket import AWSBraketBackend
 from ._azure import AzureQuantumBackend
 from ._circuits import CircuitDrawer, CircuitDrawerMatplotlib
-from ._exceptions import (DeviceNotHandledError, DeviceOfflineError,
-                          DeviceTooSmall)
+from ._exceptions import DeviceNotHandledError, DeviceOfflineError, DeviceTooSmall
 from ._ibm import IBMBackend
 from ._ionq import IonQBackend
 from ._printer import CommandPrinter

@@ -23,11 +23,24 @@ from scipy import sparse as sps
 
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+)
 from projectq.meta import Control
-from projectq.ops import (All, ClassicalInstructionGate, Command, Measure, Ph,
-                          QubitOperator, Rx, Ry, TimeEvolution)
+from projectq.ops import (
+    All,
+    ClassicalInstructionGate,
+    Command,
+    Measure,
+    Ph,
+    QubitOperator,
+    Rx,
+    Ry,
+    TimeEvolution,
+)
 from projectq.types import WeakQubitRef
 
 from . import time_evolution as te

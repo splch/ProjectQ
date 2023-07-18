@@ -14,12 +14,34 @@
 
 """ProjectQ's decomposition rules."""
 
-from . import (amplitudeamplification, arb1qubit2rzandry, barrier,
-               carb1qubit2cnotrzandry, cnot2cz, cnot2rxx, cnu2toffoliandcu,
-               controlstate, crz2cxandrz, entangle, globalphase, h2rx, ph2r,
-               phaseestimation, qft2crandhadamard, qubitop2onequbit, r2rzandph,
-               rx2rz, ry2rz, rz2rx, sqrtswap2cnot, stateprep2cnot, swap2cnot,
-               time_evolution, toffoli2cnotandtgate, uniformlycontrolledr2cnot)
+from . import (
+    amplitudeamplification,
+    arb1qubit2rzandry,
+    barrier,
+    carb1qubit2cnotrzandry,
+    cnot2cz,
+    cnot2rxx,
+    cnu2toffoliandcu,
+    controlstate,
+    crz2cxandrz,
+    entangle,
+    globalphase,
+    h2rx,
+    ph2r,
+    phaseestimation,
+    qft2crandhadamard,
+    qubitop2onequbit,
+    r2rzandph,
+    rx2rz,
+    ry2rz,
+    rz2rx,
+    sqrtswap2cnot,
+    stateprep2cnot,
+    swap2cnot,
+    time_evolution,
+    toffoli2cnotandtgate,
+    uniformlycontrolledr2cnot,
+)
 
 all_defined_decomposition_rules = [
     rule

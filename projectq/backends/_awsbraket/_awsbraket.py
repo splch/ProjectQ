@@ -18,12 +18,29 @@ import json
 import random
 
 from projectq.cengines import BasicEngine
-from projectq.meta import (LogicalQubitIDTag, get_control_count,
-                           has_negative_control)
-from projectq.ops import (Allocate, Barrier, DaggeredGate, Deallocate,
-                          FlushGate, HGate, Measure, R, Rx, Ry, Rz, Sdag,
-                          SGate, SqrtXGate, SwapGate, Tdag, TGate, XGate,
-                          YGate, ZGate)
+from projectq.meta import LogicalQubitIDTag, get_control_count, has_negative_control
+from projectq.ops import (
+    Allocate,
+    Barrier,
+    DaggeredGate,
+    Deallocate,
+    FlushGate,
+    HGate,
+    Measure,
+    R,
+    Rx,
+    Ry,
+    Rz,
+    Sdag,
+    SGate,
+    SqrtXGate,
+    SwapGate,
+    Tdag,
+    TGate,
+    XGate,
+    YGate,
+    ZGate,
+)
 from projectq.types import WeakQubitRef
 
 from ._awsbraket_boto3_client import retrieve, send

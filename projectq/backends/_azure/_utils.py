@@ -15,11 +15,32 @@
 """Utility functions for Azure Quantum."""
 
 from projectq.meta import get_control_count, has_negative_control
-from projectq.ops import (AllocateQubitGate, BarrierGate, ControlledGate,
-                          DaggeredGate, DeallocateQubitGate, HGate,
-                          MeasureGate, R, Rx, Rxx, Ry, Ryy, Rz, Rzz, Sdag,
-                          SGate, SqrtXGate, SwapGate, Tdag, TGate, XGate,
-                          YGate, ZGate, get_inverse)
+from projectq.ops import (
+    AllocateQubitGate,
+    BarrierGate,
+    ControlledGate,
+    DaggeredGate,
+    DeallocateQubitGate,
+    HGate,
+    MeasureGate,
+    R,
+    Rx,
+    Rxx,
+    Ry,
+    Ryy,
+    Rz,
+    Rzz,
+    Sdag,
+    SGate,
+    SqrtXGate,
+    SwapGate,
+    Tdag,
+    TGate,
+    XGate,
+    YGate,
+    ZGate,
+    get_inverse,
+)
 
 from .._exceptions import InvalidCommandError
 

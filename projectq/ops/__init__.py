@@ -14,14 +14,29 @@
 
 """ProjectQ module containing all basic gates (operations)."""
 
-from ._basics import (BasicGate, BasicMathGate, BasicPhaseGate,
-                      BasicRotationGate, ClassicalInstructionGate,
-                      FastForwardingGate, MatrixGate, NotInvertible,
-                      NotMergeable, SelfInverseGate)
+from ._basics import (
+    BasicGate,
+    BasicMathGate,
+    BasicPhaseGate,
+    BasicRotationGate,
+    ClassicalInstructionGate,
+    FastForwardingGate,
+    MatrixGate,
+    NotInvertible,
+    NotMergeable,
+    SelfInverseGate,
+)
 from ._command import Command, CtrlAll, IncompatibleControlState, apply_command
 from ._gates import *
-from ._metagates import (All, C, ControlledGate, DaggeredGate, Tensor,
-                         get_inverse, is_identity)
+from ._metagates import (
+    All,
+    C,
+    ControlledGate,
+    DaggeredGate,
+    Tensor,
+    get_inverse,
+    is_identity,
+)
 from ._qaagate import QAA
 from ._qftgate import QFT, QFTGate
 from ._qpegate import QPE
@@ -29,5 +44,4 @@ from ._qubit_operator import QubitOperator
 from ._shortcuts import *
 from ._state_prep import StatePreparation
 from ._time_evolution import TimeEvolution
-from ._uniformly_controlled_rotation import (UniformlyControlledRy,
-                                             UniformlyControlledRz)
+from ._uniformly_controlled_rotation import UniformlyControlledRy, UniformlyControlledRz

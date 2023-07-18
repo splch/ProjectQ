@@ -24,10 +24,14 @@ import inspect
 import projectq
 import projectq.libs.math
 import projectq.setups.decompositions
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
-                               InstructionFilter, LocalOptimizer, TagRemover)
-from projectq.ops import (CNOT, BasicGate, ClassicalInstructionGate,
-                          ControlledGate)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    InstructionFilter,
+    LocalOptimizer,
+    TagRemover,
+)
+from projectq.ops import CNOT, BasicGate, ClassicalInstructionGate, ControlledGate
 
 from ._utils import high_level_gates, one_and_two_qubit_gates
 

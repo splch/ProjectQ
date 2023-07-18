@@ -22,10 +22,13 @@ It includes, e.g.,
 * Dagger (with Dagger(eng): ...)
 """
 
-from ._compute import (Compute, ComputeTag, CustomUncompute, Uncompute,
-                       UncomputeTag)
-from ._control import (Control, canonical_ctrl_state, get_control_count,
-                       has_negative_control)
+from ._compute import Compute, ComputeTag, CustomUncompute, Uncompute, UncomputeTag
+from ._control import (
+    Control,
+    canonical_ctrl_state,
+    get_control_count,
+    has_negative_control,
+)
 from ._dagger import Dagger
 from ._dirtyqubit import DirtyQubitTag
 from ._logicalqubit import LogicalQubitIDTag

@@ -22,8 +22,7 @@ import requests
 from requests import Session
 from requests.compat import urljoin
 
-from .._exceptions import (DeviceOfflineError, DeviceTooSmall,
-                           RequestTimeoutError)
+from .._exceptions import DeviceOfflineError, DeviceTooSmall, RequestTimeoutError
 
 # An AQT token can be requested at:
 # https://gateway-portal.aqt.eu/

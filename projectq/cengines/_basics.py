@@ -105,8 +105,9 @@ class BasicEngine:
         qb = Qureg([Qubit(self, new_id)])
         cmd = Command(self, Allocate, (qb,))
         if dirty:
-            from projectq.meta import \
-                DirtyQubitTag  # pylint: disable=import-outside-toplevel
+            from projectq.meta import (
+                DirtyQubitTag,  # pylint: disable=import-outside-toplevel
+            )
 
             if self.is_meta_tag_supported(DirtyQubitTag):
                 cmd.tags += [DirtyQubitTag()]
@@ -140,8 +141,9 @@ class BasicEngine:
         if qubit.id == -1:
             raise ValueError("Already deallocated.")
 
-        from projectq.meta import \
-            DirtyQubitTag  # pylint: disable=import-outside-toplevel
+        from projectq.meta import (
+            DirtyQubitTag,  # pylint: disable=import-outside-toplevel
+        )
 
         is_dirty = qubit.id in self.main_engine.dirty_qubits
         self.send(

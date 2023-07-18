@@ -46,8 +46,13 @@ import subprocess
 import sys
 import tempfile
 from distutils.cmd import Command
-from distutils.errors import (CCompilerError, CompileError, DistutilsExecError,
-                              DistutilsPlatformError, LinkError)
+from distutils.errors import (
+    CCompilerError,
+    CompileError,
+    DistutilsExecError,
+    DistutilsPlatformError,
+    LinkError,
+)
 from distutils.spawn import find_executable, spawn
 from operator import itemgetter
 from pathlib import Path

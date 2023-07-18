@@ -19,8 +19,13 @@ import math
 import pytest
 
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter, MainEngine)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+    MainEngine,
+)
 from projectq.meta import Control
 from projectq.ops import Measure, Ry
 

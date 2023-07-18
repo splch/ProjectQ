@@ -16,8 +16,7 @@
 
 from projectq.cengines import DecompositionRule
 from projectq.meta import Compute, Control, CustomUncompute
-from projectq.ops import (CNOT, Ry, Rz, UniformlyControlledRy,
-                          UniformlyControlledRz)
+from projectq.ops import CNOT, Ry, Rz, UniformlyControlledRy, UniformlyControlledRz
 
 
 def _apply_ucr_n(

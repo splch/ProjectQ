@@ -18,10 +18,19 @@ import math
 import random
 
 from projectq.cengines import BasicEngine
-from projectq.meta import (LogicalQubitIDTag, get_control_count,
-                           has_negative_control)
-from projectq.ops import (NOT, Allocate, Barrier, Deallocate, FlushGate, H,
-                          Measure, Rx, Ry, Rz)
+from projectq.meta import LogicalQubitIDTag, get_control_count, has_negative_control
+from projectq.ops import (
+    NOT,
+    Allocate,
+    Barrier,
+    Deallocate,
+    FlushGate,
+    H,
+    Measure,
+    Rx,
+    Ry,
+    Rz,
+)
 from projectq.types import WeakQubitRef
 
 from .._exceptions import InvalidCommandError

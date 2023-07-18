@@ -15,14 +15,17 @@ except ImportError:
 import projectq.libs.math
 import projectq.setups.decompositions
 from projectq.backends import ResourceCounter, Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
-                               InstructionFilter, LocalOptimizer, MainEngine,
-                               TagRemover)
-from projectq.libs.math import (AddConstant, AddConstantModN,
-                                MultiplyByConstantModN)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    InstructionFilter,
+    LocalOptimizer,
+    MainEngine,
+    TagRemover,
+)
+from projectq.libs.math import AddConstant, AddConstantModN, MultiplyByConstantModN
 from projectq.meta import Control
-from projectq.ops import (QFT, All, BasicMathGate, H, Measure, R, Swap, X,
-                          get_inverse)
+from projectq.ops import QFT, All, BasicMathGate, H, Measure, R, Swap, X, get_inverse
 
 
 def run_shor(eng, N, a, verbose=False):

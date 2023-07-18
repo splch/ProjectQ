@@ -20,9 +20,27 @@ import pytest
 from projectq import MainEngine
 from projectq.backends._aqt import _aqt
 from projectq.cengines import BasicMapperEngine, DummyEngine
-from projectq.ops import (NOT, All, Allocate, Barrier, Command, Deallocate,
-                          Entangle, Measure, Rx, Rxx, Ry, Rz, S, Sdag, T, Tdag,
-                          X, Y, Z)
+from projectq.ops import (
+    NOT,
+    All,
+    Allocate,
+    Barrier,
+    Command,
+    Deallocate,
+    Entangle,
+    Measure,
+    Rx,
+    Rxx,
+    Ry,
+    Rz,
+    S,
+    Sdag,
+    T,
+    Tdag,
+    X,
+    Y,
+    Z,
+)
 from projectq.types import WeakQubitRef
 
 

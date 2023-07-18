@@ -18,10 +18,22 @@ import inspect
 
 import projectq.libs.math
 import projectq.setups.decompositions
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
-                               InstructionFilter, LocalOptimizer, TagRemover)
-from projectq.ops import (CNOT, QFT, BasicMathGate, ClassicalInstructionGate,
-                          ControlledGate, Swap, get_inverse)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    InstructionFilter,
+    LocalOptimizer,
+    TagRemover,
+)
+from projectq.ops import (
+    CNOT,
+    QFT,
+    BasicMathGate,
+    ClassicalInstructionGate,
+    ControlledGate,
+    Swap,
+    get_inverse,
+)
 
 
 def one_and_two_qubit_gates(eng, cmd):  # pylint: disable=unused-argument

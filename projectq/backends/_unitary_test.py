@@ -24,8 +24,21 @@ from scipy.stats import unitary_group
 
 from projectq.cengines import DummyEngine, MainEngine, NotYetMeasuredError
 from projectq.meta import Control, LogicalQubitIDTag
-from projectq.ops import (CNOT, All, Allocate, BasicGate, Command, Deallocate,
-                          H, MatrixGate, Measure, Rx, Rxx, X, Y)
+from projectq.ops import (
+    CNOT,
+    All,
+    Allocate,
+    BasicGate,
+    Command,
+    Deallocate,
+    H,
+    MatrixGate,
+    Measure,
+    Rx,
+    Rxx,
+    X,
+    Y,
+)
 from projectq.types import WeakQubitRef
 
 from ._unitary import UnitarySimulator

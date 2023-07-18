@@ -16,11 +16,18 @@
 import pytest
 
 from projectq import MainEngine
-from projectq.cengines import (DecompositionRule, DecompositionRuleSet,
-                               DummyEngine)
+from projectq.cengines import DecompositionRule, DecompositionRuleSet, DummyEngine
 from projectq.cengines._replacer import _replacer
-from projectq.ops import (BasicGate, ClassicalInstructionGate, Command, H,
-                          NotInvertible, Rx, S, X)
+from projectq.ops import (
+    BasicGate,
+    ClassicalInstructionGate,
+    Command,
+    H,
+    NotInvertible,
+    Rx,
+    S,
+    X,
+)
 
 
 def test_filter_engine():

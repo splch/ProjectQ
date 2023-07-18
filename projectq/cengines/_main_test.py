@@ -18,8 +18,7 @@ import weakref
 import pytest
 
 from projectq.backends import Simulator
-from projectq.cengines import (BasicMapperEngine, DummyEngine, LocalOptimizer,
-                               _main)
+from projectq.cengines import BasicMapperEngine, DummyEngine, LocalOptimizer, _main
 from projectq.ops import AllocateQubitGate, DeallocateQubitGate, FlushGate, H
 
 

@@ -28,12 +28,34 @@ import scipy.sparse.linalg
 
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (BasicMapperEngine, DummyEngine, LocalOptimizer,
-                               NotYetMeasuredError)
+from projectq.cengines import (
+    BasicMapperEngine,
+    DummyEngine,
+    LocalOptimizer,
+    NotYetMeasuredError,
+)
 from projectq.meta import Control, Dagger, LogicalQubitIDTag
-from projectq.ops import (CNOT, All, Allocate, BasicGate, BasicMathGate,
-                          Command, H, MatrixGate, Measure, QubitOperator, Rx,
-                          Ry, Rz, S, TimeEvolution, Toffoli, X, Y, Z)
+from projectq.ops import (
+    CNOT,
+    All,
+    Allocate,
+    BasicGate,
+    BasicMathGate,
+    Command,
+    H,
+    MatrixGate,
+    Measure,
+    QubitOperator,
+    Rx,
+    Ry,
+    Rz,
+    S,
+    TimeEvolution,
+    Toffoli,
+    X,
+    Y,
+    Z,
+)
 from projectq.types import WeakQubitRef
 
 
@@ -724,8 +746,7 @@ def test_simulator_constant_math_emulation():
     import projectq.backends._sim._simulator as _sim
     from projectq.backends._sim._cppsim import Simulator as CppSim
     from projectq.backends._sim._pysim import Simulator as PySim
-    from projectq.libs.math import (AddConstant, AddConstantModN,
-                                    MultiplyByConstantModN)
+    from projectq.libs.math import AddConstant, AddConstantModN, MultiplyByConstantModN
 
     def gate_filter(eng, cmd):
         g = cmd.gate

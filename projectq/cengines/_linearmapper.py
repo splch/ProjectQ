@@ -23,8 +23,15 @@ Output: Quantum circuit in which qubits are placed in 1-D chain in which only ne
 from copy import deepcopy
 
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import (Allocate, AllocateQubitGate, Command, Deallocate,
-                          DeallocateQubitGate, FlushGate, Swap)
+from projectq.ops import (
+    Allocate,
+    AllocateQubitGate,
+    Command,
+    Deallocate,
+    DeallocateQubitGate,
+    FlushGate,
+    Swap,
+)
 from projectq.types import WeakQubitRef
 
 from ._basicmapper import BasicMapperEngine

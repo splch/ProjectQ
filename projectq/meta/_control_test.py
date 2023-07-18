@@ -16,8 +16,14 @@ import pytest
 
 from projectq import MainEngine
 from projectq.cengines import DummyEngine
-from projectq.meta import (Compute, ComputeTag, DirtyQubitTag, Uncompute,
-                           UncomputeTag, _control)
+from projectq.meta import (
+    Compute,
+    ComputeTag,
+    DirtyQubitTag,
+    Uncompute,
+    UncomputeTag,
+    _control,
+)
 from projectq.ops import Command, CtrlAll, H, IncompatibleControlState, Rx, X
 from projectq.types import WeakQubitRef
 

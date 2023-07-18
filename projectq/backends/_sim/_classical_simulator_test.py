@@ -15,8 +15,12 @@
 import pytest
 
 from projectq import MainEngine
-from projectq.cengines import (AutoReplacer, BasicMapperEngine,
-                               DecompositionRuleSet, DummyEngine)
+from projectq.cengines import (
+    AutoReplacer,
+    BasicMapperEngine,
+    DecompositionRuleSet,
+    DummyEngine,
+)
 from projectq.ops import NOT, All, BasicMathGate, C, Measure, X, Y
 from projectq.types import WeakQubitRef
 

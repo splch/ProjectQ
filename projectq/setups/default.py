@@ -21,8 +21,12 @@ projectq.setups.decompositions
 
 import projectq
 import projectq.setups.decompositions
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
-                               LocalOptimizer, TagRemover)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    LocalOptimizer,
+    TagRemover,
+)
 
 
 def get_engine_list():

@@ -245,8 +245,9 @@ class Command:  # pylint: disable=too-many-instance-attributes
             state (int,str,projectq.meta.CtrtAll): state of control qubit (ie. positive or negative)
         """
         # NB: avoid circular imports
-        from projectq.meta import \
-            canonical_ctrl_state  # pylint: disable=import-outside-toplevel
+        from projectq.meta import (
+            canonical_ctrl_state,  # pylint: disable=import-outside-toplevel
+        )
 
         self._control_state = canonical_ctrl_state(state, len(self._control_qubits))
 
@@ -264,8 +265,9 @@ class Command:  # pylint: disable=too-many-instance-attributes
                 control qubits.
         """
         # NB: avoid circular imports
-        from projectq.meta import \
-            canonical_ctrl_state  # pylint: disable=import-outside-toplevel
+        from projectq.meta import (
+            canonical_ctrl_state,  # pylint: disable=import-outside-toplevel
+        )
 
         if not isinstance(qubits, list):
             raise ValueError('Control qubits must be a list of qubits!')

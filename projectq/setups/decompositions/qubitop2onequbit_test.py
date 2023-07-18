@@ -19,8 +19,12 @@ import pytest
 import projectq.setups.decompositions.qubitop2onequbit as qubitop2onequbit
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+)
 from projectq.meta import Control
 from projectq.ops import All, Command, Measure, Ph, QubitOperator, X, Y, Z
 from projectq.types import WeakQubitRef

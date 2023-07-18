@@ -16,8 +16,17 @@
 
 import json
 
-from projectq.ops import (Allocate, DaggeredGate, Deallocate, Measure,
-                          SqrtSwap, Swap, X, Z, get_inverse)
+from projectq.ops import (
+    Allocate,
+    DaggeredGate,
+    Deallocate,
+    Measure,
+    SqrtSwap,
+    Swap,
+    X,
+    Z,
+    get_inverse,
+)
 
 
 def _gate_name(gate):

@@ -18,11 +18,28 @@ import numpy as np
 import pytest
 
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter, MainEngine)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+    MainEngine,
+)
 from projectq.meta import Control
-from projectq.ops import (All, BasicGate, ClassicalInstructionGate, MatrixGate,
-                          Measure, Ph, R, Rx, Ry, Rz, X, XGate)
+from projectq.ops import (
+    All,
+    BasicGate,
+    ClassicalInstructionGate,
+    MatrixGate,
+    Measure,
+    Ph,
+    R,
+    Rx,
+    Ry,
+    Rz,
+    X,
+    XGate,
+)
 from projectq.setups.decompositions import arb1qubit2rzandry_test as arb1q_t
 
 from . import carb1qubit2cnotrzandry as carb1q

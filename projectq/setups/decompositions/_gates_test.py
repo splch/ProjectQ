@@ -18,14 +18,37 @@ Tests for decompositions rules (using the Simulator).
 import pytest
 
 from projectq.backends import Simulator
-from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
-                               InstructionFilter, MainEngine)
+from projectq.cengines import (
+    AutoReplacer,
+    DecompositionRuleSet,
+    DummyEngine,
+    InstructionFilter,
+    MainEngine,
+)
 from projectq.meta import Control
-from projectq.ops import (All, ClassicalInstructionGate, CRz, Entangle, H,
-                          Measure, Ph, R, Rz, T, Tdag, Toffoli, X)
-from projectq.setups.decompositions import (crz2cxandrz, entangle, globalphase,
-                                            ph2r, r2rzandph,
-                                            toffoli2cnotandtgate)
+from projectq.ops import (
+    All,
+    ClassicalInstructionGate,
+    CRz,
+    Entangle,
+    H,
+    Measure,
+    Ph,
+    R,
+    Rz,
+    T,
+    Tdag,
+    Toffoli,
+    X,
+)
+from projectq.setups.decompositions import (
+    crz2cxandrz,
+    entangle,
+    globalphase,
+    ph2r,
+    r2rzandph,
+    toffoli2cnotandtgate,
+)
 
 
 def low_level_gates(eng, cmd):
