@@ -25,15 +25,11 @@ Decompose the circuit into a Rx/Ry/Rz/H/CNOT gate set that will be translated in
 set.
 """
 
-from projectq.backends._exceptions import DeviceNotHandledError, DeviceOfflineError
+from projectq.backends._exceptions import (DeviceNotHandledError,
+                                           DeviceOfflineError)
 from projectq.backends._ibm._ibm_http_client import show_devices
-from projectq.cengines import (
-    BasicMapperEngine,
-    GridMapper,
-    IBM5QubitMapper,
-    LocalOptimizer,
-    SwapAndCNOTFlipper,
-)
+from projectq.cengines import (BasicMapperEngine, GridMapper, IBM5QubitMapper,
+                               LocalOptimizer, SwapAndCNOTFlipper)
 from projectq.ops import CNOT, Barrier, H, Rx, Ry, Rz
 from projectq.setups import restrictedgateset
 

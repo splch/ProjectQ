@@ -21,7 +21,8 @@ import pytest
 
 from projectq import MainEngine
 from projectq.backends import _printer
-from projectq.cengines import DummyEngine, InstructionFilter, NotYetMeasuredError
+from projectq.cengines import (DummyEngine, InstructionFilter,
+                               NotYetMeasuredError)
 from projectq.meta import LogicalQubitIDTag
 from projectq.ops import NOT, Allocate, Command, H, Measure, T
 from projectq.types import WeakQubitRef

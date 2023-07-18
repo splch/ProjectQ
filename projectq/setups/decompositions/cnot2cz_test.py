@@ -18,12 +18,8 @@ import pytest
 
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (
-    AutoReplacer,
-    DecompositionRuleSet,
-    DummyEngine,
-    InstructionFilter,
-)
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
+                               InstructionFilter)
 from projectq.meta import Control
 from projectq.ops import CNOT, CZ, All, Measure, X, Z
 from projectq.setups.decompositions import cnot2cz

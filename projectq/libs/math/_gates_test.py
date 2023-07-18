@@ -13,26 +13,13 @@
 #   limitations under the License.
 """Tests for projectq.libs.math._gates.py."""
 
-from projectq.libs.math import (
-    AddConstant,
-    AddConstantModN,
-    AddQuantum,
-    ComparatorQuantum,
-    DivideQuantum,
-    MultiplyByConstantModN,
-    MultiplyQuantum,
-    SubConstant,
-    SubConstantModN,
-    SubtractQuantum,
-)
+from projectq.libs.math import (AddConstant, AddConstantModN, AddQuantum,
+                                ComparatorQuantum, DivideQuantum,
+                                MultiplyByConstantModN, MultiplyQuantum,
+                                SubConstant, SubConstantModN, SubtractQuantum)
 
-from ._gates import (
-    AddQuantumGate,
-    ComparatorQuantumGate,
-    DivideQuantumGate,
-    MultiplyQuantumGate,
-    SubtractQuantumGate,
-)
+from ._gates import (AddQuantumGate, ComparatorQuantumGate, DivideQuantumGate,
+                     MultiplyQuantumGate, SubtractQuantumGate)
 
 
 def test_addconstant():

@@ -28,7 +28,8 @@ import time
 import boto3
 import botocore
 
-from .._exceptions import DeviceOfflineError, DeviceTooSmall, RequestTimeoutError
+from .._exceptions import (DeviceOfflineError, DeviceTooSmall,
+                           RequestTimeoutError)
 
 
 class AWSBraket:

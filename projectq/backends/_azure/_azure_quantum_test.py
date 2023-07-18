@@ -28,7 +28,8 @@ try:
 
     import projectq.backends._azure._azure_quantum
     from projectq.backends import AzureQuantumBackend
-    from projectq.backends._azure._exceptions import AzureQuantumTargetNotFoundError
+    from projectq.backends._azure._exceptions import \
+        AzureQuantumTargetNotFoundError
 except ImportError:
     _has_azure_quantum = False
 

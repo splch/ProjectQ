@@ -20,20 +20,16 @@ import numpy as np
 
 from projectq.cengines import BasicEngine
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import AllocateQubitGate, DeallocateQubitGate, FlushGate, MeasureGate
+from projectq.ops import (AllocateQubitGate, DeallocateQubitGate, FlushGate,
+                          MeasureGate)
 from projectq.types import WeakQubitRef
 
 from .._utils import _rearrange_result
 from ._azure_quantum_client import retrieve, send
 from ._exceptions import AzureQuantumTargetNotFoundError
-from ._utils import (
-    IONQ_PROVIDER_ID,
-    QUANTINUUM_PROVIDER_ID,
-    is_available_ionq,
-    is_available_quantinuum,
-    to_json,
-    to_qasm,
-)
+from ._utils import (IONQ_PROVIDER_ID, QUANTINUUM_PROVIDER_ID,
+                     is_available_ionq, is_available_quantinuum, to_json,
+                     to_qasm)
 
 try:
     from azure.quantum import Workspace

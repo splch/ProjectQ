@@ -15,7 +15,8 @@
 
 from projectq.cengines import DummyEngine, _basicmapper
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import Allocate, BasicGate, Command, Deallocate, FlushGate, Measure
+from projectq.ops import (Allocate, BasicGate, Command, Deallocate, FlushGate,
+                          Measure)
 from projectq.types import WeakQubitRef
 
 

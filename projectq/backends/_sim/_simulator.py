@@ -23,15 +23,10 @@ import math
 import random
 
 from projectq.cengines import BasicEngine
-from projectq.meta import LogicalQubitIDTag, get_control_count, has_negative_control
-from projectq.ops import (
-    Allocate,
-    BasicMathGate,
-    Deallocate,
-    FlushGate,
-    Measure,
-    TimeEvolution,
-)
+from projectq.meta import (LogicalQubitIDTag, get_control_count,
+                           has_negative_control)
+from projectq.ops import (Allocate, BasicMathGate, Deallocate, FlushGate,
+                          Measure, TimeEvolution)
 from projectq.types import WeakQubitRef
 
 FALLBACK_TO_PYSIM = False
@@ -361,10 +356,7 @@ class Simulator(BasicEngine):
         elif isinstance(cmd.gate, BasicMathGate):
             # improve performance by using C++ code for some commomn gates
             from projectq.libs.math import (  # pylint: disable=import-outside-toplevel
-                AddConstant,
-                AddConstantModN,
-                MultiplyByConstantModN,
-            )
+                AddConstant, AddConstantModN, MultiplyByConstantModN)
 
             qubitids = []
             for qureg in cmd.qubits:

@@ -18,9 +18,12 @@ import pytest
 import projectq.libs.math
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import AutoReplacer, DecompositionRuleSet, InstructionFilter
-from projectq.libs.math import AddConstant, AddConstantModN, MultiplyByConstantModN
-from projectq.ops import All, BasicMathGate, ClassicalInstructionGate, Measure, X
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
+                               InstructionFilter)
+from projectq.libs.math import (AddConstant, AddConstantModN,
+                                MultiplyByConstantModN)
+from projectq.ops import (All, BasicMathGate, ClassicalInstructionGate,
+                          Measure, X)
 from projectq.setups.decompositions import qft2crandhadamard, swap2cnot
 
 

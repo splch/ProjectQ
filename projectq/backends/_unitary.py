@@ -23,8 +23,10 @@ from copy import deepcopy
 import numpy as np
 
 from projectq.cengines import BasicEngine
-from projectq.meta import LogicalQubitIDTag, get_control_count, has_negative_control
-from projectq.ops import AllocateQubitGate, DeallocateQubitGate, FlushGate, MeasureGate
+from projectq.meta import (LogicalQubitIDTag, get_control_count,
+                           has_negative_control)
+from projectq.ops import (AllocateQubitGate, DeallocateQubitGate, FlushGate,
+                          MeasureGate)
 from projectq.types import WeakQubitRef
 
 

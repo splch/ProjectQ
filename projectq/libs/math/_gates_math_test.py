@@ -18,24 +18,14 @@ import pytest
 import projectq.libs.math
 import projectq.setups.decompositions
 from projectq.backends import CommandPrinter
-from projectq.cengines import (
-    AutoReplacer,
-    DecompositionRuleSet,
-    InstructionFilter,
-    MainEngine,
-    TagRemover,
-)
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
+                               InstructionFilter, MainEngine, TagRemover)
 from projectq.meta import Compute, Control, Uncompute
-from projectq.ops import All, BasicMathGate, ClassicalInstructionGate, Measure, X
+from projectq.ops import (All, BasicMathGate, ClassicalInstructionGate,
+                          Measure, X)
 
-from . import (
-    AddConstant,
-    AddQuantum,
-    ComparatorQuantum,
-    DivideQuantum,
-    MultiplyQuantum,
-    SubtractQuantum,
-)
+from . import (AddConstant, AddQuantum, ComparatorQuantum, DivideQuantum,
+               MultiplyQuantum, SubtractQuantum)
 
 
 def print_all_probabilities(eng, qureg):

@@ -23,12 +23,8 @@ import requests
 from requests import Session
 from requests.compat import urljoin
 
-from .._exceptions import (
-    DeviceOfflineError,
-    DeviceTooSmall,
-    JobSubmissionError,
-    RequestTimeoutError,
-)
+from .._exceptions import (DeviceOfflineError, DeviceTooSmall,
+                           JobSubmissionError, RequestTimeoutError)
 
 _API_URL = 'https://api.ionq.co/v0.2/'
 _JOB_API_URL = urljoin(_API_URL, 'jobs/')

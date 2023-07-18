@@ -18,7 +18,8 @@ from unittest import mock
 import pytest
 import requests
 
-from projectq.backends._exceptions import JobSubmissionError, RequestTimeoutError
+from projectq.backends._exceptions import (JobSubmissionError,
+                                           RequestTimeoutError)
 from projectq.backends._ionq import _ionq_http_client
 
 

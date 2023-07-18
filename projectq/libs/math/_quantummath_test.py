@@ -17,16 +17,13 @@ import pytest
 import projectq.libs.math
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import AutoReplacer, DecompositionRuleSet, InstructionFilter
-from projectq.libs.math import (
-    AddQuantum,
-    ComparatorQuantum,
-    DivideQuantum,
-    MultiplyQuantum,
-    SubtractQuantum,
-)
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet,
+                               InstructionFilter)
+from projectq.libs.math import (AddQuantum, ComparatorQuantum, DivideQuantum,
+                                MultiplyQuantum, SubtractQuantum)
 from projectq.meta import Compute, Control, Dagger, Uncompute
-from projectq.ops import All, BasicMathGate, ClassicalInstructionGate, Measure, X
+from projectq.ops import (All, BasicMathGate, ClassicalInstructionGate,
+                          Measure, X)
 from projectq.setups.decompositions import swap2cnot
 
 

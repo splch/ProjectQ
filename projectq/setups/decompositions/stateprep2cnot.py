@@ -19,12 +19,8 @@ import math
 
 from projectq.cengines import DecompositionRule
 from projectq.meta import Control, Dagger
-from projectq.ops import (
-    Ph,
-    StatePreparation,
-    UniformlyControlledRy,
-    UniformlyControlledRz,
-)
+from projectq.ops import (Ph, StatePreparation, UniformlyControlledRy,
+                          UniformlyControlledRz)
 
 
 def _decompose_state_preparation(cmd):  # pylint: disable=too-many-locals

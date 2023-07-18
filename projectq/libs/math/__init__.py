@@ -15,15 +15,7 @@
 """Math gate definitions."""
 
 from ._default_rules import all_defined_decomposition_rules
-from ._gates import (
-    AddConstant,
-    AddConstantModN,
-    AddQuantum,
-    ComparatorQuantum,
-    DivideQuantum,
-    MultiplyByConstantModN,
-    MultiplyQuantum,
-    SubConstant,
-    SubConstantModN,
-    SubtractQuantum,
-)
+from ._gates import (AddConstant, AddConstantModN, AddQuantum,
+                     ComparatorQuantum, DivideQuantum, MultiplyByConstantModN,
+                     MultiplyQuantum, SubConstant, SubConstantModN,
+                     SubtractQuantum)

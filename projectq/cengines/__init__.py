@@ -27,12 +27,8 @@ from ._linearmapper import LinearMapper, return_swap_depth
 from ._main import MainEngine, NotYetMeasuredError, UnsupportedEngineError
 from ._manualmapper import ManualMapper
 from ._optimize import LocalOptimizer
-from ._replacer import (
-    AutoReplacer,
-    DecompositionRule,
-    DecompositionRuleSet,
-    InstructionFilter,
-)
+from ._replacer import (AutoReplacer, DecompositionRule, DecompositionRuleSet,
+                        InstructionFilter)
 from ._swapandcnotflipper import SwapAndCNOTFlipper
 from ._tagremover import TagRemover
 from ._testengine import CompareEngine, DummyEngine

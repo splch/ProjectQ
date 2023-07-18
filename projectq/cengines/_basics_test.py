@@ -20,13 +20,8 @@ import pytest
 from projectq import MainEngine
 from projectq.cengines import DummyEngine, InstructionFilter, _basics
 from projectq.meta import DirtyQubitTag
-from projectq.ops import (
-    AllocateQubitGate,
-    ClassicalInstructionGate,
-    DeallocateQubitGate,
-    FastForwardingGate,
-    H,
-)
+from projectq.ops import (AllocateQubitGate, ClassicalInstructionGate,
+                          DeallocateQubitGate, FastForwardingGate, H)
 from projectq.types import Qubit
 
 # try:

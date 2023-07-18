@@ -47,14 +47,9 @@ import math
 
 import numpy as np
 
-from ._basics import (
-    BasicGate,
-    BasicPhaseGate,
-    BasicRotationGate,
-    ClassicalInstructionGate,
-    FastForwardingGate,
-    SelfInverseGate,
-)
+from ._basics import (BasicGate, BasicPhaseGate, BasicRotationGate,
+                      ClassicalInstructionGate, FastForwardingGate,
+                      SelfInverseGate)
 from ._command import apply_command
 from ._metagates import get_inverse
 

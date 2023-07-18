@@ -24,7 +24,8 @@ import projectq.setups.decompositions.stateprep2cnot as stateprep2cnot
 import projectq.setups.decompositions.uniformlycontrolledr2cnot as ucr2cnot
 from projectq.backends import Simulator
 from projectq.cengines import AutoReplacer, DecompositionRuleSet, MainEngine
-from projectq.ops import CNOT, QPE, All, H, Measure, Ph, StatePreparation, Tensor, X
+from projectq.ops import (CNOT, QPE, All, H, Measure, Ph, StatePreparation,
+                          Tensor, X)
 from projectq.setups.decompositions import phaseestimation as pe
 from projectq.setups.decompositions import qft2crandhadamard as dqft
 

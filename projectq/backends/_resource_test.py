@@ -20,7 +20,8 @@ import pytest
 from projectq.backends import ResourceCounter
 from projectq.cengines import DummyEngine, MainEngine, NotYetMeasuredError
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import CNOT, QFT, All, Allocate, Command, H, Measure, Rz, Rzz, X
+from projectq.ops import (CNOT, QFT, All, Allocate, Command, H, Measure, Rz,
+                          Rzz, X)
 from projectq.types import WeakQubitRef
 
 

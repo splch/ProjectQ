@@ -26,24 +26,10 @@ that will be used in the backend.
 """
 
 from projectq.backends._awsbraket._awsbraket_boto3_client import show_devices
-from projectq.backends._exceptions import DeviceNotHandledError, DeviceOfflineError
-from projectq.ops import (
-    Barrier,
-    H,
-    R,
-    Rx,
-    Ry,
-    Rz,
-    S,
-    Sdag,
-    SqrtX,
-    Swap,
-    T,
-    Tdag,
-    X,
-    Y,
-    Z,
-)
+from projectq.backends._exceptions import (DeviceNotHandledError,
+                                           DeviceOfflineError)
+from projectq.ops import (Barrier, H, R, Rx, Ry, Rz, S, Sdag, SqrtX, Swap, T,
+                          Tdag, X, Y, Z)
 from projectq.setups import restrictedgateset
 
 

@@ -18,22 +18,11 @@ import pytest
 import projectq.setups.decompositions.uniformlycontrolledr2cnot as ucr2cnot
 from projectq import MainEngine
 from projectq.backends import Simulator
-from projectq.cengines import (
-    AutoReplacer,
-    DecompositionRuleSet,
-    DummyEngine,
-    InstructionFilter,
-)
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
+                               InstructionFilter)
 from projectq.meta import Compute, Control, Uncompute
-from projectq.ops import (
-    All,
-    Measure,
-    Ry,
-    Rz,
-    UniformlyControlledRy,
-    UniformlyControlledRz,
-    X,
-)
+from projectq.ops import (All, Measure, Ry, Rz, UniformlyControlledRy,
+                          UniformlyControlledRz, X)
 
 
 def slow_implementation(angles, control_qubits, target_qubit, eng, gate_class):

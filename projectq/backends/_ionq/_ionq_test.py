@@ -20,38 +20,13 @@ from unittest import mock
 import pytest
 
 from projectq import MainEngine
-from projectq.backends._exceptions import (
-    InvalidCommandError,
-    MidCircuitMeasurementError,
-)
+from projectq.backends._exceptions import (InvalidCommandError,
+                                           MidCircuitMeasurementError)
 from projectq.backends._ionq import _ionq, _ionq_http_client
 from projectq.cengines import DummyEngine
-from projectq.ops import (
-    CNOT,
-    All,
-    Allocate,
-    Barrier,
-    Command,
-    Deallocate,
-    Entangle,
-    H,
-    Measure,
-    Ph,
-    R,
-    Rx,
-    Rxx,
-    Ry,
-    Rz,
-    S,
-    Sdag,
-    SqrtX,
-    T,
-    Tdag,
-    Toffoli,
-    X,
-    Y,
-    Z,
-)
+from projectq.ops import (CNOT, All, Allocate, Barrier, Command, Deallocate,
+                          Entangle, H, Measure, Ph, R, Rx, Rxx, Ry, Rz, S,
+                          Sdag, SqrtX, T, Tdag, Toffoli, X, Y, Z)
 from projectq.types import WeakQubitRef
 
 from ._ionq_mapper import BoundedQubitMapper

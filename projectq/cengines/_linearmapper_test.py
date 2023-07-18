@@ -19,16 +19,8 @@ import pytest
 from projectq.cengines import DummyEngine
 from projectq.cengines import _linearmapper as lm
 from projectq.meta import LogicalQubitIDTag
-from projectq.ops import (
-    CNOT,
-    QFT,
-    Allocate,
-    BasicGate,
-    Command,
-    Deallocate,
-    FlushGate,
-    X,
-)
+from projectq.ops import (CNOT, QFT, Allocate, BasicGate, Command, Deallocate,
+                          FlushGate, X)
 from projectq.types import WeakQubitRef
 
 

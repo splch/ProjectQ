@@ -19,41 +19,12 @@ import math
 import pytest
 
 from projectq import MainEngine
-from projectq.cengines import (
-    AutoReplacer,
-    BasicMapperEngine,
-    DecompositionRuleSet,
-    DummyEngine,
-)
+from projectq.cengines import (AutoReplacer, BasicMapperEngine,
+                               DecompositionRuleSet, DummyEngine)
 from projectq.cengines._replacer import NoGateDecompositionError
-from projectq.ops import (
-    CNOT,
-    NOT,
-    All,
-    Allocate,
-    Barrier,
-    C,
-    Command,
-    Deallocate,
-    Entangle,
-    H,
-    MatrixGate,
-    Measure,
-    Ph,
-    R,
-    Rx,
-    Ry,
-    Rz,
-    S,
-    Sdag,
-    SqrtX,
-    Swap,
-    T,
-    Tdag,
-    X,
-    Y,
-    Z,
-)
+from projectq.ops import (CNOT, NOT, All, Allocate, Barrier, C, Command,
+                          Deallocate, Entangle, H, MatrixGate, Measure, Ph, R,
+                          Rx, Ry, Rz, S, Sdag, SqrtX, Swap, T, Tdag, X, Y, Z)
 from projectq.types import WeakQubitRef
 
 from ._awsbraket_test_fixtures import *  # noqa: F401,F403

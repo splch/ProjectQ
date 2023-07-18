@@ -19,37 +19,10 @@ import math
 import pytest
 
 from projectq.cengines import DummyEngine, MainEngine
-from projectq.ops import (
-    CNOT,
-    CX,
-    NOT,
-    Allocate,
-    Barrier,
-    C,
-    Command,
-    Deallocate,
-    H,
-    Measure,
-    Rx,
-    Rxx,
-    Ry,
-    Ryy,
-    Rz,
-    Rzz,
-    S,
-    Sdag,
-    Sdagger,
-    SqrtX,
-    SqrtXGate,
-    Swap,
-    T,
-    Tdag,
-    Tdagger,
-    X,
-    Y,
-    Z,
-    get_inverse,
-)
+from projectq.ops import (CNOT, CX, NOT, Allocate, Barrier, C, Command,
+                          Deallocate, H, Measure, Rx, Rxx, Ry, Ryy, Rz, Rzz, S,
+                          Sdag, Sdagger, SqrtX, SqrtXGate, Swap, T, Tdag,
+                          Tdagger, X, Y, Z, get_inverse)
 from projectq.types import WeakQubitRef
 
 from .._exceptions import InvalidCommandError
@@ -58,12 +31,9 @@ _has_azure_quantum = True
 try:
     import azure.quantum  # noqa: F401
 
-    from projectq.backends._azure._utils import (
-        is_available_ionq,
-        is_available_quantinuum,
-        to_json,
-        to_qasm,
-    )
+    from projectq.backends._azure._utils import (is_available_ionq,
+                                                 is_available_quantinuum,
+                                                 to_json, to_qasm)
 except ImportError:
     _has_azure_quantum = False
 

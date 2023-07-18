@@ -17,25 +17,11 @@
 import pytest
 
 from projectq.backends import Simulator
-from projectq.cengines import (
-    AutoReplacer,
-    DecompositionRuleSet,
-    DummyEngine,
-    InstructionFilter,
-    MainEngine,
-)
+from projectq.cengines import (AutoReplacer, DecompositionRuleSet, DummyEngine,
+                               InstructionFilter, MainEngine)
 from projectq.meta import Control
-from projectq.ops import (
-    QFT,
-    All,
-    ClassicalInstructionGate,
-    Measure,
-    Ph,
-    Rx,
-    Ry,
-    X,
-    XGate,
-)
+from projectq.ops import (QFT, All, ClassicalInstructionGate, Measure, Ph, Rx,
+                          Ry, X, XGate)
 
 from . import cnu2toffoliandcu
 
